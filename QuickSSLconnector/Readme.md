@@ -10,6 +10,8 @@ This is a simple shell script that allows you to manage and connect to various S
 ## Usage
 
 1. Clone or download the repository to your local machine.
+1. (Optional) add your script folder to PATH (see main Readme in this git)
+1. Make the script executable with ``sudo chmod +x ./quickSSH``
 2. Open a terminal and navigate to the directory where the script is saved.
 3. Run the script using the following command: ``./quickSSH``
 4. Follow the on-screen instructions to manage and connect to SSH connections.

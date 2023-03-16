@@ -1,4 +1,4 @@
-# My Shell Scripts Repository
+# My Shell Scripts to make your life a littlebit easier
 
 This repository contains all my custom shell scripts, including:
 

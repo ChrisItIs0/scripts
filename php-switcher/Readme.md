@@ -17,6 +17,8 @@ Before using the script, you will need to configure it by setting the values of 
 
 The `configurePHPswitch` script is used to configure the `php-switch` script by setting the values of the `first_version` and `second_version` variables in the script file.
 
+It will show you a list of all installed PHP versions on your system and prompt you to select the ones two switch between.
+
 ## Usage
 
 To use the script, simply run it on your terminal: ``./configurePHPswitch``

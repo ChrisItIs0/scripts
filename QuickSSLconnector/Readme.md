@@ -5,13 +5,9 @@ This is a simple shell script that allows you to manage and connect to various S
 ## Prerequisites
 
 - `jq` JSON parser is required for this script to work. You can install it on Ubuntu-based systems using `apt`.
-
-## Installation
-
-To install `jq` on Ubuntu-based systems, run the following command:
+- To install `jq` on Ubuntu-based systems, run the following command:
 
 ``sudo apt install jq``
-
 
 ## Usage
 

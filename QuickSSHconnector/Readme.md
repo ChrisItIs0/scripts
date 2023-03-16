@@ -15,5 +15,5 @@ It assumes that all your SSH connection are configured with ssh key authenticati
 1. Make the script executable with ``sudo chmod +x ./quickSSH``
 2. Open a terminal and navigate to the directory where the script is saved. (if you didn't add the folder to you PATH)
 3. Run the script using the following command: ``./quickSSH`` (if you added the folder to your PATH type ``quickSSH`` anywhere in your terminal)
-4. Follow the on-screen instructions to manage and connect to SSH connections.
+4. Follow the on-screen instructions to manage and connect to SSH sessions.
 

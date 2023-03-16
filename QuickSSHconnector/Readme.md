@@ -1,7 +1,7 @@
 # SSH Connection Manager
 
 This is a simple shell script that allows you to manage and connect to various SSH connections.
-It assumes that all your SSH connection are configured with ssh key authentication (if not, what are you doing?)
+It assumes that all your SSH connection are configured with ssh key authentication (if not, what are you doing?). However it might also work with password authentication, but I never tested that.
 
 ## Prerequisites
 

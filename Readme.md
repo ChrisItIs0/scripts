@@ -26,7 +26,7 @@ Before you can run a script, you need to make sure it is executable.
 
 1. Open your terminal and navigate to the directory where your script is saved.
 
-2. Run the following command to make the script executable: ``chmod +x scriptname.sh`` 
+2. Run the following command to make the script executable: ``sudo chmod +x scriptname`` 
 
 
-Make sure to replace `scriptname.sh` with the actual name of your script
+Make sure to replace `scriptname` with the actual name of your script

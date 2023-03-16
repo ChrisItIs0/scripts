@@ -11,10 +11,6 @@ This is a simple shell script that allows you to manage and connect to various S
 
 1. Clone or download the repository to your local machine.
 2. Open a terminal and navigate to the directory where the script is saved.
-3. Run the script using the following command:
-
-``./ssh-connections.sh``
-
-
+3. Run the script using the following command: ``./ssh-connections.sh``
 4. Follow the on-screen instructions to manage and connect to SSH connections.
 

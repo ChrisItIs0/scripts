@@ -1,0 +1,17 @@
+#!/bin/bash
+
+first_version="7.4"
+second_version="8.2"
+
+CURRENT_VERSION=$(php -v | grep -oP '(?<=PHP )[\d\.]+')
+
+if [[ $CURRENT_VERSION == "$first_version"* ]]; then
+    sudo update-alternatives --set php /usr/bin/php"$second_version"
+    echo "Switched to PHP version $second_version"
+elif [[ $CURRENT_VERSION == "$second_version"* ]]; then
+    sudo update-alternatives --set php /usr/bin/php"$first_version"
+    echo "Switched to PHP version $first_version"
+else
+    echo "Error: Current PHP version ($CURRENT_VERSION) is not supported by this script."
+fi
+

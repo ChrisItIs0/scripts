@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Check if php-switch script exists
+if ! [ -x "/path/to/your/php-switch/script" ]; then
+  echo 'Error: php-switch script not found.' >&2
+  exit 1
+fi
+
+
+
+versions=($(ls /usr/bin/php* | cut -d'/' -f4 | grep -v 'php$' | sort -V | sed 's/^php//'))
+
+
+echo "Select two PHP versions to switch between:"
+PS3="Enter first PHP version: "
+select first in "${versions[@]}"; do
+    if [[ "$first" ]]; then
+        PS3="Enter second PHP version: "
+        select second in "${versions[@]}"; do
+            if [[ "$second" ]]; then
+                break
+            fi
+        done
+        break
+    fi
+done
+
+if [[ "$first" && "$second" ]]; then
+    sed -i "s/first_version=.*/first_version=\"$first\"/" /path/to/your/php-switch/script
+    sed -i "s/second_version=.*/second_version=\"$second\"/" /path/to/your/php-switch/script
+    echo "PHP versions set successfully."
+else
+    echo "Selection canceled."
+fi
